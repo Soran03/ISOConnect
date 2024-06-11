@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textAlignment="center"
+        android:textColor="@color/off_white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adminIsocNameInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:boxStrokeColor="@color/pastelGreen_700"
+        app:hintTextColor="@color/pastelGreen_700">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminIsocNameInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Isoc"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminCreateIsocButton"
+        style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/alata"
+        android:includeFontPadding="false"
+        android:padding="5dp"
+        android:text="Create"
+
+        android:textAllCaps="false"
+        app:backgroundTint="@color/pastelGreen_900"
+        app:cornerRadius="35dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allUsersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

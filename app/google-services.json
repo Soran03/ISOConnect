@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "760895937143",
+    "project_id": "fyp-coursework-test",
+    "storage_bucket": "fyp-coursework-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760895937143:android:04db9bb78a52b916d54472",
+        "android_client_info": {
+          "package_name": "com.example.fyp_coursework_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk2BUErTpn9AUTaFx02jT-xuwoOxA58is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

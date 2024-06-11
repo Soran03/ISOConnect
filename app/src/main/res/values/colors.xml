@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_900">#006868</color>
+    <color name="bg_teal">#DCFFFC</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#F9F9F9</color>
+
+    <color name="grey_200">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+
+    <color name="magenta_VD">#2A272A</color>
+    <color name="magenta_D">#4B4A54</color>
+    <color name="grey">#677381</color>
+    <color name="grey_blue">#82A0AA</color>
+    <color name="ocean_blue">#A3CFCD</color>
+
+    <color name="pastelGreen_900">#344E42</color>
+    <color name="pastelGreen_700">#496754</color>
+    <color name="pastelGreen_500">#5D7764</color>
+    <color name="pastelGreen_300">#87A88A</color>
+    <color name="pastelGreen_200">#E0EEC6</color>
+    <color name="pastelGreen_100">#dad7cd</color>
+
+    <color name="mintGreen">#F1F7ED</color>
+
+    <color name="like_red">#C9184A</color>
+
+    <color name="red">#7A0025</color>
+    <color name="ripple_color">#33000000</color>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.FYP_Coursework_Test" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/pastelGreen_900</item>
+        <item name="android:colorPrimaryDark">@color/pastelGreen_900</item>
+        <item name="android:textCursorDrawable">@color/magenta_D</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:hardwareAccelerated">true</item>
+    </style>
+
+    <style name="Theme.ActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/magenta_VD</item>
+        <item name="android:colorPrimaryDark">@color/magenta_VD</item>
+        <item name="android:titleTextColor">@color/off_white</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="colorAccent">@color/pastelGreen_900</item>
+        <item name="colorOnPrimary">@color/pastelGreen_900</item>
+
+    </style>
+
+</resources>

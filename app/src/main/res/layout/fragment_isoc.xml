@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastelGreen_100"
+    android:orientation="vertical"
+    tools:context=".Fragments.IsocFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/isocsJoinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/outline_add_circle_outline_24"
+        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+        android:drawableTint="@color/off_white"
+        android:fontFamily="@font/alata"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Join an ISOC"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/magenta_VD"
+        app:elevation="4dp"
+        app:iconPadding="12dp"
+        app:rippleColor="@color/ripple_color" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/pastelGreen_900"
+       />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/isocsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

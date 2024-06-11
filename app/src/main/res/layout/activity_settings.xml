@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastelGreen_100">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settingsTopLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/pastelGreen_900"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/settingsBackButton"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="0dp"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/ic_baseline_arrow_back_24"
+            app:iconSize="30dp"
+            app:iconTint="@color/off_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/ripple_color" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settingsProfileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/profile_circle_svgrepo_com"
+            app:civ_border_color="@color/off_white"
+            app:civ_border_width="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/settingsUsernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/alata"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textColor="@color/off_white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingsProfileImage" />
+
+        <TextView
+            android:id="@+id/settingsFullnameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alata"
+            android:text="Full Name"
+            android:textAlignment="center"
+            android:textColor="@color/pastelGreen_300"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingsUsernameText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/settingsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTopLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/settingsGeneralCardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/pastelGreen_300"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/settingsTextGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/alata"
+                    android:padding="8dp"
+                    android:text="GENERAL"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/off_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsTopLayout" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingsProfileButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/pastelGreen_700"
+                android:fontFamily="@font/alata"
+                android:text="Profile"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/magenta_D"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsGeneralCardView"
+                app:rippleColor="@color/ripple_color" />
+
+            <View
+                android:id="@+id/settingsDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/pastelGreen_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsProfileButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingsPrivacyButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/baseline_key_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/pastelGreen_700"
+                android:fontFamily="@font/alata"
+                android:text="Privacy &amp; Security"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/magenta_D"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsDivider"
+                app:rippleColor="@color/ripple_color" />
+
+            <View
+                android:id="@+id/settingsDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/pastelGreen_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsPrivacyButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingsNotificationButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/baseline_notifications_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/pastelGreen_700"
+                android:fontFamily="@font/alata"
+                android:text="Notifications"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/magenta_D"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsDivider2"
+                app:rippleColor="@color/ripple_color" />
+
+            <View
+                android:id="@+id/settingsDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/pastelGreen_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsNotificationButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingsNotificationButton2"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/baseline_monitor_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/pastelGreen_700"
+                android:fontFamily="@font/alata"
+                android:text="Display"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/magenta_D"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsDivider3"
+                app:rippleColor="@color/ripple_color" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/settingsFeedbackCardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/pastelGreen_300"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsNotificationButton2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/settingsTextFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/alata"
+                    android:padding="8dp"
+                    android:text="FEEDBACK"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/off_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsTopLayout" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingsBugButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/baseline_bug_report_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/pastelGreen_700"
+                android:fontFamily="@font/alata"
+                android:text="Report a Bug"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/magenta_D"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsFeedbackCardView"
+                app:rippleColor="@color/ripple_color" />
+
+            <View
+                android:id="@+id/settingsDivider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/pastelGreen_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsBugButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingsBugButton2"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:drawableLeft="@drawable/baseline_send_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/pastelGreen_700"
+                android:fontFamily="@font/alata"
+                android:text="Send Feedback"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/magenta_D"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsBugButton"
+                app:rippleColor="@color/ripple_color" />
+
+            <View
+                android:id="@+id/settingsDivider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signOutButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/baseline_exit_to_app_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/red"
+                android:fontFamily="@font/alata"
+                android:text="Sign Out"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settingsBugButton2"
+                app:rippleColor="@color/ripple_color" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

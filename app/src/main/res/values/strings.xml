@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ISOConnect</string>
+    <string name="title_activity_splash">Splash_Activity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_chat_details">ChatDetailsActivity</string>
+    <string name="title_activity_add_event">AddEventActivity</string>
+
+    <string name="default_web_client_id">760895937143-pbvvv7bitbg97ga3kmnsovju10p20088.apps.googleusercontent.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_api_key">AIzaSyBDB7Kw8Q2d3rHBP4o92i6LF4yWNliFB7k</string>
+    <string name="google_places_api_key">AIzaSyCHmeNzhyjT0mw50WDim9lgSi5QjxOodI4</string>
+
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_join_isoc">JoinIsocActivity</string>
+    <string name="title_activity_announcements">AnnouncementsActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_default">DefaultActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>
