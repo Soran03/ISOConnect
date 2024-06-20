@@ -55,11 +55,11 @@ Welcome to ISOConnect, the full-stack Android application designed to enhance co
 
 The following images are a select few screenshots of the app, full list can be found in the screenshots folder.
 
-![Login Screen](screenshots.Sign_in.png)
-![Home Page](screenshots/Home.png)
-![Isocs Page](screenshots/Isocs.png)
-![Isoc Chat Page](screenshots/isoc_chat.png)
-![Event Details Page](screenshots/event_details.png)
+![Login Screen](screenshots.Sign_in.jpg)
+![Home Page](screenshots/Home.jpg)
+![Isocs Page](screenshots/Isocs.jpg)
+![Isoc Chat Page](screenshots/isoc_chat.jpg)
+![Event Details Page](screenshots/event_details.jpg)
 
 
 
