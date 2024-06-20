@@ -2,8 +2,7 @@
 
 ## Overview
 
-The Islamic Society App is a mobile application designed to enhance communication and collaboration among members of Islamic societies across universities. It provides a platform for users to connect, share information, and stay updated with society events and activities.
-
+Welcome to ISOConnect, the full-stack Android application designed to enhance communication and collaboration among members of Islamic societies across universities. Developed using Kotlin and Android Studio, the app leverages Firebase for backend services and Google Cloud Services for key functionalities. It provides a platform for users to connect, share information, and stay updated with society events and activities.
 
 ## Features
 
