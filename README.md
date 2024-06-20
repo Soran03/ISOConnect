@@ -55,7 +55,7 @@ Welcome to ISOConnect, the full-stack Android application designed to enhance co
 
 The following images are a select few screenshots of the app, full list can be found in the screenshots folder.
 
-![Login Screen](screenshots.Sign_in.jpg)
+![Login Screen](screenshots/Sign_in.jpg)
 ![Home Page](screenshots/Home.jpg)
 ![Isocs Page](screenshots/Isocs.jpg)
 ![Isoc Chat Page](screenshots/isoc_chat.jpg)
@@ -73,5 +73,5 @@ If you have any questions or suggestions, feel free to reach out:
 
 ---
 
-Thank you for checking out the Car Rental App! We hope you find it useful and easy to use.
+Thank you for checking out ISOConnect! We hope you find it useful and easy to use.
 
